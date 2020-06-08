@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profile</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+            .text{
+                width:100%;
+                position: absolute;
+                left: 0;
+                top:0;
+                height: 200px;
+                background-color:#a6a39e;
+                color:#F0E4DD;
+                z-index: -1;
+            }
+            .text h1{
+                color:black;
+                font-family: Bookman Old Style;
+                font-size: 30px;
+                font-weight: lighter;
+                padding: 20px 40px;
+            }
+
+
+
+            .grid_container{
+                display: grid;
+                grid-gap: 50px 50px;
+                padding: 100px 100px 0 100px;
+            }
+            .grid_container>div{
+                padding: 10px;
+                min-width: 50%;
+            }
+
+
+
+
+            .grid1 {
+                grid-column: 1;
+                grid-row: 1 ;
+                background-color:#d3d3d3 ;
+            }
+            
+            .grid1 p{
+                font-size: 15px;
+                font-family: Bookman Old Style;
+                color:black;
+                line-height: 25px;
+                text-align: center;
+            }
+            .container{
+                width:50%;
+                margin:auto;
+            }
+
+
+            .grid2 {
+                grid-column: 1;
+                grid-row: 2;
+                background-color:#d3d3d3;
+            }
+            .grid2 h3{
+                font-family: Bookman Old Style;
+                font-size: 20px;
+                font-weight: lighter;
+                text-align: center;
+            }
+            .grid2 a{
+                text-decoration: none;
+                padding:5px;
+            }
+            
+
+
+
+            .grid3{
+                grid-column:2 / span 2;
+                grid-row:1 / span 2;
+                background-color:#e5e1d6;
+            }
+            .grid3 .padding{
+                margin-left: 20px;
+            }
+            .grid3 h3{
+                font-family: Bookman Old Style;
+                font-size: 20px;
+                font-weight: lighter;
+            }
+            .grid3 p{
+                font-size: 15px;
+                font-family: Bookman Old Style;
+                color:black;
+                line-height: 35px;
+            }
+            .grid3 .dotted{
+                border-bottom: 3px dotted #a6a39e;
+                width: 120px;
+                margin-left: 150px;
+                margin-top:-15px;
+                clear: both;
+            }
+            .grid3 .fa{
+                float: left;
+                padding:7px 15px;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <div class="text">
+            <h1>Profile</h1>
+        </div>
+        <div class="grid_container">
+            <div class="grid1">
+               <div class="container">
+                <img src="mine3.jpg" width="230px" height="250px">
+                <p>May Sky <br> &quot; Never Give Up &quot;</p>
+               </div>
+            </div>
+            <div class="grid2">
+                <h3>Follow</h3>
+                <div class="container">
+                <a href="https://www.facebook.com/maysky.ms?ref=bookmarks"><img src="facebook.png" width="50px" height="50px"></a>
+                <a href="https://www.instagram.com/mk_lean/"><img src="instagram.png" width="50px" height="50px"></a>
+                <a href="#"><img src="twitter.png" width="50px" height="50px"></a>    
+                </div>           
+            </div>
+            <div class="grid3">
+               <div class="padding">
+                <h3>My Bio</h3>
+                <i style="font-size:23px;margin-top:-10px" class="fa">&#xf2bd;</i> <p>Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp; May Kaung Kin</p><div class="dotted"></div>
+                <i style="font-size:22px" class="fa">&#xf15c;</i> <p>Roll no &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp; 4IST-26</p><div class="dotted"></div>
+                <i style="font-size:22px" class="fa">&#xf254;</i> <p>Age &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp; 20</p><div class="dotted"></div>
+                <i style="font-size:22px" class="fa">&#xf073;</i> <p>Birthday &nbsp;&nbsp;&nbsp;:&nbsp; 10.7.2000</p><div class="dotted"></div>
+                <i style="font-size:22px" class="fa">&#xf19c;</i> <p>Studied at &nbsp;:&nbsp; University of Technology-Yatanarpon Cyber City</p><div class="dotted"></div>
+                <i style="font-size:22px" class="fa">&#xf19d;</i> <p>Went to &nbsp;&nbsp;&nbsp;&nbsp;:&nbsp; VEC private high school</p><div class="dotted"></div>
+                <i style="font-size:27px" class="fa">&#xf015;</i> <p>Lives in &nbsp;&nbsp;&nbsp;&nbsp;:&nbsp; Mandalay</p><div class="dotted"></div>
+
+                <h3>Contact info</h3>
+                <i style="font-size:22px" class="fa">&#xf098;</i> <p>09-960588645</p>
+                <i style="font-size:22px" class="fa">&#xf0e0;</i> <p>maykgkin16@gmail.com</p>
+                <i style="font-size:22px" class="fa">&#xf047;</i> <p>67 * 107B st, ChanMyaTharZi Township, Mandalay</p>
+               </div>
+            </div>
+            
+        </div>
+    </body>
+</html>
