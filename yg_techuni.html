@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Yangon Technological University</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <style>
+            .navbar1{
+              position: absolute;
+              top:0;
+              left: 0;
+              width:100%;
+              background-color:gray;
+            }
+            .nav_container{
+                width: 70%;
+                margin:auto;
+            }
+            .navbar1 a{
+              float: right;
+              font-size: 15px;
+              font-family:Bookman Old Style;
+              color: white;
+              text-align: center;
+              padding: 12px 5px;
+              text-decoration: none;
+            }
+            .navbar1 a:hover{
+                color:rgb(167, 164, 164);
+            }
+
+
+
+
+            .navbar2{
+                position: absolute;
+                left: 0;
+                top: 20px;
+                width: 100%;
+            }
+            .navbar2 .img{
+                float: left;
+            }
+            .navbar2 h1{
+                color:rgb(236, 156, 8);
+                letter-spacing:2px;
+                word-spacing: 6px;
+                font-family:Book Antiqua;
+                font-size: 40px;
+            }
+            .navbar2 p{
+                font-size: 40px;
+                color: gray;
+                letter-spacing: 5px;
+                margin-top:-20px;
+            }
+
+
+
+
+            .navbar3{
+                position: absolute;
+                left: 0;
+                top:180px;
+                width: 100%;
+                background-color:#343D46;
+                font-family: Bookman Old Style;
+            }
+            .navbar3 .active{
+                color:whitesmoke;
+            }
+            .navbar3 a {
+              float: left;
+              font-size: 12px;
+              text-align: center;
+              padding: 14px 7px;
+              color:gray;
+              text-decoration: none;
+            }            
+            .dropdown {
+              float: left;
+              overflow: hidden;
+            }           
+            .dropdown .dropbtn {
+              font-size: 12px;  
+              border: none;
+              outline: none;
+              color: gray;
+              padding: 14px 7px;
+              background-color: inherit;
+              font-family: inherit;
+              margin: 0;
+            }                       
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: whitesmoke;
+              min-width: 160px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+            }            
+            .dropdown-content a {
+              float: none;
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+              text-align: left;
+            }            
+            .dropdown-content a:hover {
+              background-color: #ddd;
+            }            
+            .dropdown:hover .dropdown-content {
+              display: block;
+            }
+            .navbar3 a:hover,.dropdown .dropbtn:hover{
+                color:whitesmoke;
+            }
+
+
+
+
+
+            .header{
+                position: absolute;
+                left: 0;
+                width: 100%;
+                top:220px;
+            }
+            .header .img1{
+                position: absolute;
+                opacity: 0.6;
+            }
+            .header .center{
+                position: absolute;
+                width:70%;
+                margin-top:60px;
+                height: 390px;
+                background-color: rgba(0, 0, 0, 0.6);
+            }
+            .header .img2{
+                float: left;
+                padding: 40px;
+            }
+            .header h3{
+                font-family: Bookman Old Style;
+                font-size: 25px;
+                font-weight: lighter;
+                padding:20px 5px 5px 5px;
+                color: whitesmoke;
+            }
+            .header p{
+                font-family:inherit;
+                color: whitesmoke;
+                padding: 0 15px;
+                font-size: 15px;
+                word-spacing: 5px;
+            }
+            .header .button{
+                background-color: rgb(236, 156, 8);
+                color:whitesmoke;
+                padding:8px;
+                border-radius: 3px;
+                border:none;
+                width: 10%;
+            }
+            .header .button:hover{
+                background-color: orangered;
+            }
+
+
+
+
+
+            .main_container{
+              width: 70%;
+              margin: auto;
+            }
+            .main{
+              width: 100%;
+              position: absolute;
+              left: 0;
+              top:780px;
+            }
+
+
+
+            .main .flex_container{
+              display: flex;
+              flex-wrap: nowrap;
+              justify-content: space-between;
+            }
+            .flex_container>div{
+              width:320px;
+              height: 300px;
+              box-shadow: 0 2px 2px 2px #888888;
+            }
+            .flex_container .img3{
+              float: left;
+              border-radius: 50%;
+              border: 1px solid orange;
+              width:60px;
+              padding:5px 0 0 10px;
+              margin-top:10px;
+              margin-left: -40px;
+              margin-right: 5px;
+              background-color:rgb(233, 170, 52) ;
+            }
+            .main .flex_container h3{
+                margin-top: 5px;
+                color:rgb(37, 37, 37);
+                font-family: Bookman Old Style;
+                font-size: 30px;
+                font-weight: lighter;
+            }
+            .main .flex_container p{
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                color:rgb(37, 37, 37);
+                padding: 0 10px 0 40px;
+                font-size: 17px;
+                word-spacing: 3px;
+                line-height: 25px;
+                text-align: justify;
+                letter-spacing: 0.5px;
+            }
+            .main .flex_container .button{
+                background-color: rgb(236, 156, 8);
+                float: right;
+                color:whitesmoke;
+                padding:8px;
+                border-radius: 3px;
+                border:none;
+                margin-right: 10px;
+            }
+            .main .flex_container .button:hover{
+                background-color: orangered;
+            }
+
+
+
+
+
+            .main .rector{
+                position: absolute;
+                width:70%;
+                margin-top:60px;
+                height: 300px;
+                padding: 30px 30px 30px 0;
+            }
+            .main .rector .img4{
+              float: left;
+              margin-right: 20px;
+            }
+            .main .rector h1{
+                color:rgb(236, 156, 8);
+                font-family: Bookman Old Style;
+                font-size: 30px;
+                font-weight: lighter;
+            }
+            .main .rector p{
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                color:rgb(37, 37, 37);
+                font-size: 17px;
+                word-spacing: 3px;
+                line-height: 25px;
+                text-align: justify;
+                letter-spacing: 0.5px;
+            }
+            .main .rector .button{
+                background-color: rgb(236, 156, 8);
+                float: right;
+                color:whitesmoke;
+                padding:8px;
+                border-radius: 3px;
+                border:none;
+                margin-right: 10px;
+            }
+            .main .rector .button:hover{
+                background-color: orangered;
+            }
+
+
+
+
+
+            .main .event{
+              margin-top: 500px;
+            }
+            .main .event h1{
+                color:rgb(236, 156, 8);
+                font-family: Bookman Old Style;
+                font-size: 40px;
+                text-align: center;
+            }
+            .main .flex_container1{
+              display: flex;
+              flex-wrap: nowrap;
+              justify-content: space-between;
+            }
+            .flex_container1>div{
+              width:250px;
+              height: 220px;
+            }
+            .flex_container1 img:hover{
+              box-shadow: 0 2px 2px 2px #888888;
+            }
+            .main .event .button{
+                background-color: rgb(236, 156, 8);
+                float: right;
+                color:whitesmoke;
+                padding:8px;
+                border-radius: 3px;
+                border:none;
+                margin-right: 10px;
+            }
+            .main .event .button:hover{
+                background-color: orangered;
+            }
+
+
+
+
+
+            .main .text{
+              margin-top:50px;
+            }
+            .main .text h1{
+                color:rgb(236, 156, 8);
+                font-family: Bookman Old Style;
+                font-size: 40px;
+                text-align: center;
+            }
+            .main .text p{
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                color:rgb(37, 37, 37);
+                font-size: 17px;
+                word-spacing: 3px;
+                line-height: 25px;
+                text-align: justify;
+                letter-spacing: 0.5px;
+            }
+            .main .text .button{
+                background-color: rgb(236, 156, 8);
+                color:whitesmoke;
+                padding:8px;
+                border-radius: 3px;
+                border:none;
+            }
+            .main .text .button:hover{
+                background-color: orangered;
+            }
+            .main .text .button_center{
+              width: 10%;
+              margin: auto;
+            }
+
+
+
+
+
+            .back_img{
+              margin-top:2200px;
+              position: absolute;
+              width: 100%;
+              left:0;
+              background-image: url("yangon_uni.jpg");
+              background-position:center;
+              background-size: 2000px;
+              background-repeat: no-repeat;
+              border-radius: 10px;
+              height: 250px;
+              opacity: 0.9;
+            }
+            .flex_container2{
+              display: flex;
+              flex-wrap: nowrap;
+              justify-content: space-between;
+            }
+            .flex_container2>div{
+              margin-top:50px;
+              width:320px;
+              height: 150px;
+              border:1px solid white;
+              background-color: rgba(0, 0, 0, 0.5);
+            }
+            .back_img h1{
+                color:rgb(236, 156, 8);
+                font-family: Bookman Old Style;
+                font-size: 30px;
+                text-align: center;
+            }
+            .back_img h2{
+                color:white;
+                font-family: Bookman Old Style;
+                font-size: 20px;
+                text-align: center;
+                font-weight: lighter;
+            }
+            .back_img .flex_container2>div:hover{
+              width:330px;
+              height: 160px;
+            }
+
+            
+
+
+
+            .new{
+              margin-top: 2500px;
+              position: absolute;
+              width: 100%;
+              left: 0;
+            }
+            .new .flex_container3{
+              display: flex;
+              flex-wrap: nowrap;
+              justify-content: space-between;
+            }
+            .flex_container3>div{
+              width:330px;
+              height: 280px;
+              box-shadow: 0 1px 1px 1px #bebcbc;
+              margin-bottom: 20px;
+            }
+            .new .flex_container3 p{
+                color:rgb(255, 166, 1);
+                font-family: Bookman Old Style;
+                font-size: 13px;
+                text-align: center;
+                font-weight: lighter;
+            }
+            .new .button{
+                background-color: rgb(236, 156, 8);
+                float: right;
+                color:whitesmoke;
+                padding:8px;
+                border-radius: 3px;
+                border:none;
+                margin-right: 10px;
+            }
+            .new .button:hover{
+                background-color: orangered;
+            }
+            .new h1{
+                color:rgb(236, 156, 8);
+                font-family: Bookman Old Style;
+                font-size: 40px;
+                text-align: center;
+            }
+            
+
+
+
+
+            .footer{
+              margin-top: 3300px;
+              position: absolute;
+              width: 100%;
+              left: 0;
+              background-color:#343D46;
+            }
+            .footer .flex_container4{
+              display: flex;
+              flex-wrap: nowrap;
+              justify-content: space-between;
+            }
+            .flex_container4>div{
+              width:330px;
+              height: 400px;
+            }
+            .footer h1{
+                margin-top:80px;
+                color:white;
+                font-family: Bookman Old Style;
+                font-size: 20px;
+                font-weight: lighter;
+            }
+            .footer p{
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 15px;
+                color: whitesmoke;
+                line-height: 30px;
+                text-align: justify;
+                letter-spacing: 0.5px;
+            }
+            .footer ul li{
+              color: whitesmoke;
+              line-height: 25px;
+              font-size: 13px;
+            }
+            .footer a{
+              text-decoration: none;
+              color: whitesmoke;
+              font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+              font-size: 15px;
+              letter-spacing: 0.5px;
+            }
+            .footer img{
+              float: left;
+              padding-right: 10px;
+            }
+
+
+
+        </style>
+    </head>
+
+
+    <body>
+
+
+
+        <div class="navbar1">
+           <div class="nav_container">
+            <a href="#">Register</a>
+            <a href="#">Sign in |</a>
+            <a href="#">Library |</a>
+            <a href="#">Alumini |</a>
+           </div>
+        </div>
+
+
+
+        <div class="navbar2">
+           <div class="nav_container">
+            <img class="img" src="Yangon_logo.png" width="100px" height="130px">
+            <h1>YANGON TECHNOLOGICAL UNIVERSITY</h1>
+            <p>ရန်ကုန်နည်းပညာတက္ကသိုလ်</p>
+           </div>
+        </div>
+
+
+
+        <div class="navbar3">
+           <div class="nav_container">
+               <div><a class="active" href="#">HOME</a></div>
+               <div class="dropdown">
+                <button class="dropbtn">ABOUT YTU
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Rector's Messages</a>
+                  <a href="#">History</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">ADMISSION
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Rector's Messages</a>
+                  <a href="#">History</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">DEPARTMENT
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Rector's Messages</a>
+                  <a href="#">History</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">ACADEMIDS
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Rector's Messages</a>
+                  <a href="#">History</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">NEWS AND EVENTS
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Rector's Messages</a>
+                  <a href="#">History</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">CONFERENCES
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Rector's Messages</a>
+                  <a href="#">History</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">RESEARCH
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Rector's Messages</a>
+                  <a href="#">History</a>
+                </div>
+              </div>
+              <div><a href="#">INTERNATIONAL AFFAIRS</a></div>
+              <div><a href="#">GALLERY</a></div>
+           </div>
+        </div>
+
+
+
+        <div class="header">
+            <img class="img1" src="Yangon_uni.jpg" width="100%" height="500px">
+            <div class="nav_container">
+                <div class="center">
+                    <img class="img2" src="Yangon_uni1.jpg" width="400px" height="280px">
+                    <h3>Myanmar&#39;s first Diploma Programme in Telecommunications launched</h3>
+                    <p>The new Diploma Programme in Telecommunications between the University of Oulu and Yangon Technical University (YTU) was launched on 22 March 2018. The programme aims to promote the construction of a society of equal opportunities in Myanmar as well as entrepreneurship and ...</p>
+                    <br><button class="button">Read More &nbsp;<i class="fa fa-arrow-circle-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="main">
+          <div class="main_container">
+          <div class="flex_container">
+            <div>
+              <div class="img3"><img src="obj.svg" width="50px" height="50px"></div>
+              <h3>Our Objectives</h3>
+              <p>It is envisaged that YTU will become a highly-prestigious technological centre of excellence in teaching and research with a strong commitment to systematically educate and train</p>
+              <button class="button">Read More &nbsp;<i class="fa fa-arrow-circle-right"></i></button>
+            </div>
+            <div>
+              <div class="img3"><img src="mission.svg" width="50px" height="50px"></div>
+              <h3>Our Missions</h3>
+              <p>To educate and train students systematically to become engineers, specialists and researchers who can effectively contribute to the building of a modern developed nation</p>
+              <button class="button">Read More &nbsp;<i class="fa fa-arrow-circle-right"></i></button>
+            </div>
+            <div>
+              <div class="img3"><img src="program.svg" width="50px" height="50px"></div>
+              <h3>Programs</h3>
+              <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,</p>
+              <button class="button">Read More &nbsp;<i class="fa fa-arrow-circle-right"></i></button>
+            </div>
+          </div>
+
+
+
+          <div class="rector">
+            <img class="img4" src="YTU_Rector.jpg" width="350px" height="300px">
+            <h1>Rector's Messages</h1>
+            <p>Yangon Technological University is one of the best universities in Myanmar and only allows admissions of students who gained high marks from the matriculation examination. A student's majorized engineering field is also decided by the marks he earned through the matriculation examination. Currently, YTU possesses 12 Engineering Departments, 6 Supporting Departments, 1 Research Centre and 47 Laboratories. There are currently about 2000 students seeking knowledge and experiences at YTU. VISION It is…</p>
+            <button class="button">Read More &nbsp;<i class="fa fa-arrow-circle-right"></i></button>
+          </div>
+
+
+
+          <div class="event">
+          <h1 class="h1">YTU Events</h1>
+          <div class="flex_container1">
+            <div>
+              <img src="yangon_uni1.jpg" width="250px" height="200px">
+            </div>
+            <div>
+              <img src="yangon_uni.jpg" width="250px" height="200px">
+            </div>
+            <div>
+              <img src="yangon_uni1.jpg" width="250px" height="200px">
+            </div>
+            <div>
+              <img src="yangon_uni.jpg" width="250px" height="200px">
+            </div>
+          </div>
+          <button class="button">More &nbsp;<i class="fa fa-arrow-circle-right"></i></button>
+          </div>
+
+
+
+
+          <div class="text">
+            <div><h1>Welcome to YTU</h1></div>
+            <p>Yangon Technological University is one of the best universities in Myanmar and only allows admissions of students who gained high marks from the matriculation examination. A student’s majorized engineering field is also decided by the marks he earned through the matriculation examination. Currently, YTU possesses 12 Engineering Departments, 6 Supporting Departments, 1 Research Centre and 47 Laboratories. There are currently about 2000 students seeking knowledge and experiences at YTU. Find out more about the history of YTU at …</p>
+            <div class="button_center"><button class="button">Read More &nbsp;<i class="fa fa-arrow-circle-right"></i></button></div>
+          </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="back_img">
+          <div class="main_container">
+            <div class="flex_container2">
+              <div>
+                <h1>25</h1>
+                <h2>DEPARTMENT PUBLISHED</h2>
+              </div>
+              <div>
+                <h1>1000</h1>
+                <h2>PROFESSIONAL LECTURES</h2>
+              </div>
+              <div>
+                <h1>2000</h1>
+                <h2>STUDENT ENROLLMENT</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="new">
+          <div class="main_container">
+            <h1>Updated News</h1>
+            <div class="flex_container3">
+              <div>
+                <img src="yangon_uni2.jpg" width="330px" height="200px">
+                <p>Ministry of Education Yangon Technological...</p>
+              </div>
+              <div>
+                <img src="yangon_uni1.jpg" width="330px" height="200px">
+                <p>Ministry of Education Yangon Technological...</p>
+              </div>
+              <div>
+                <img src="yangon_uni.jpg" width="330px" height="200px">
+                <p>Ministry of Education Yangon Technological...</p>
+              </div>
+            </div>
+            <div class="flex_container3">
+              <div>
+                <img src="yangon_uni.jpg" width="330px" height="200px">
+                <p>Ministry of Education Yangon Technological...</p>
+              </div>
+              <div>
+                <img src="yangon_uni2.jpg" width="330px" height="200px">
+                <p>Ministry of Education Yangon Technological...</p>
+              </div>
+              <div>
+                <img src="yangon_uni1.jpg" width="330px" height="200px">
+                <p>Ministry of Education Yangon Technological...</p>
+              </div>
+            </div>
+            <button class="button">More &nbsp;<i class="fa fa-arrow-circle-right"></i></button>
+          </div>
+        </div>
+
+
+
+
+        <div class="footer">
+          <div class="main_container">
+            <div class="flex_container4">
+              <div>
+                <h1>ABOUT YTU</h1>
+                <p>The present Yangon Technological University (Y.T.U) began as the Department of Engineering in 1923 under the Rangoon (Yangon) University. The Engineering Department was situated downtown, on the Bogyoke Aung San street. B.Sc. (Engineering) program in Civil Engineering began in 1924.</p>
+                <p>&#169; Yangon Technological University - 2020 </p>
+              </div>
+              <div>
+                <h1>OUR LINKS</h1>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Architecture</a></li>
+                  <li><a href="#">Civil Engineering</a></li>
+                  <li><a href="#">Mechnical Engineering</a></li>
+                  <li><a href="#">Mining Engineering</a></li>
+                  <li><a href="#">Alumini</a></li>
+                </ul>
+              </div>
+              <div>
+                <h1>RECENT POSTS</h1>
+                <a href="#"><img src="yangon_uni.jpg" width="70px" height="60px"><p>Events Two <br>November 18,2019</p></a>
+                <a href="#"><img src="yangon_uni.jpg" width="70px" height="60px"><p>Events One <br>November 18,2019</p></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        
+    </body>
+</html>
